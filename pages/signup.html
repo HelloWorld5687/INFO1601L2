@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=" />
+
     <title>Sign Up</title>
   </head>
+
   <body>
     <nav>
       <a href="../index.html">Home</a>
@@ -13,6 +16,111 @@
 
     <h1>Sign Up Form</h1>
  
+    <!FORM>
+    <!Where the results go>
+    <form action="../results.html" method="GET">
+      <!Column>
+      <fieldset>
+        <!Name catagory>
+        <legend>
+          Demographic Info
+        </legend>
+
+        <!Label of text input (like cout for cin)>
+        <label>
+          Full Name
+          <!Input type, And text in enter box>
+          <input type="text" placeholder="Enter your name" name="fullname"/>
+        </label>
+
+        <!Break inside the same column>
+        <br />
+
+        <label>
+          Sex
+
+          <!Dropdown selecion>
+          <select name="sex">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+          </select>
+        </label>
+
+        <br />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" value="2000-01-01" name="dob" />
+
+        <br />
+      </fieldset>
+
+      <!New column>
+      <fieldset>
+        <legend>Contact Info</legend>
+
+        <label>
+          Email
+
+          <input type="text" name="email" />
+        </label>
+
+        <br />
+
+        <label>
+          Country
+
+          <input list="countries" name="country" />
+
+          <datalist id="countries">
+            <option value="Caroni"></option>
+            <option value="Mayaro"></option>
+            <option value="Nariva"></option>
+            <option value="Saint Andrew"></option>
+            <option value="Saint David"></option>
+            <option value="Saint George"></option>
+            <option value="Saint Patrick"></option>
+            <option value="Victoria"></option>
+          </datalist>
+        </label>
+
+        <br />
+
+        <label>
+          Telephone
+
+          <input type="tel" name="telephone">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Courses</legend>
+
+        <label>
+          <input type="checkbox" name="courses" value="info1601" checked>
+          <span>Info 1601</span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="courses" value="comp1602" checked>
+          <span>COMP 1602</span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="courses" value="comp1603" checked>
+          <span>COMP 1603</span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="courses" value="comp1604" checked>
+          <span>COMP 1604</span>
+        </label>
+      </fieldset>
+
+      <br />
+
+      <input type="submit" value="signup" />
+    </form>
 
   </body>
 </html>
